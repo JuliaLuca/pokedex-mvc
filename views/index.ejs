@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <header>
+        <h1>Pokedex</h1>
+    </header>
+ 
+    <main>
+        <section id="cards">
+                <div class="card">
+                    <img src="<%= pokemon.imagem %>" alt="">
+                    <h2 class="nomePok"><%= pokemon.nome %></h2>
+                    <p><%= pokemon.descricao %></p>
+                    <p>Tipo: <%= pokemon.tipo %></p>
+                    <p>Altura: <%= pokemon.altura %></p>
+                    <p>Peso:<%= pokemon.peso %></p>
+                    <p>Habilidade: <%= pokemon.habilidade %></p>
+                    <p>Categoria: <%= pokemon.categoria %></p>
+                    <a href="/detalhes/<%=pokemon.id %>">Editar</a>
+                    /detalhes/:id
+                </div>
+        </section>
+
+        <section id="cadastro">
+            <h2>Cadastre um novo Pokemon</h2>
+
+            <form action="/add" method="post">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="tipo">Tipo:</label>
+                <input type="text" id="tipo" name="tipo">
+
+                <label for="imagem">Link da imagem:</label>
+                <input type="text" id="imagem" name="imagem">
+
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao">
+
+                <label for="altura">Altura: </label>
+                <input type="text" id="altura" name="altura">
+
+                <label for="peso">Peso:</label>
+                <input type="text" id="peso" name="peso">
+
+                <label for="habilidade">Habilidade:</label>
+                <input type="text" id="habilidade" name="habilidade">
+
+                <label for="categoria">Categoria:</label>
+                <input type="text" id="categoria" name="categoria">
+
+                <button id="btCadastrar" type="submit">Cadastrar</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><a id="corFooter" href="https://docs.google.com/document/d/1Kn9fHlYQ7a-jeMN7YdDDF8XujTszRFT_MzDUs9gsoiA/edit">https://docs.google.com/document/- Todos os direitos reservados. &copy;</a></p>
+    </footer>
+    
+</body>
+</html>
+
+    </footer>
+    
+</body>
+</html>
