@@ -9,4 +9,4 @@
 ### Projeto inspirado na Pokedex
 
 ### Link para o Heroku: 
-### Link deploy no GitHub:
+### Link deploy no GitHub: https://julialuca.github.io/pokedex-mvc/
