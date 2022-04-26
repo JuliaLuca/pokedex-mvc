@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require("path");
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
@@ -66,4 +67,4 @@ app.get("/detalhes/:id", (req, res) => {
     res.render("descricao", {pokemon});
 });
 
-app.listen(3000, () => {console.clear(); console.log("Servidor rodando em http://localhost:3000")});
+app.listen(PORT, () => {console.clear(); console.log("Servidor rodando em http://localhost:${PORT}")});
