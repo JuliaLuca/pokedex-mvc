@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descrição</title>
-</head>
-<body>
-    <header>
-        <h1>Pokedex</h1>
-    </header>
-
-    <main>
-        <section id="cards">
-            <% pokedex.forEach((pokemon) => { %>
-                <div class="card">
-                    <img src="<%= pokemon.imagem %>" alt="">
-                    <h2 class="nomePok"><%= pokemon.nome %></h2>
-                    <p><%= pokemon.descricao %></p>
-                    <p>Tipo: <%= pokemon.tipo %></p>
-                    <p>Altura: <%= pokemon.altura %></p>
-                    <p>Peso:<%= pokemon.peso %></p>
-                    <p>Habilidade: <%= pokemon.habilidade %></p>
-                    <p>Categoria: <%= pokemon.categoria %></p>
-                    
-                </div>
-            <% }) %>
-
-        </section>
-    </main>
-    
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/style.css">
+		<title>Descrição</title>
+	</head>
+	<body class="fundo">
+		<%- include('./partials/header.ejs') %>
+		<main>
+			<section id="cardao">
+				<div class="cardin">
+					<img src="<%= pokemon.imagem %>" alt="">
+					<h2 class="nomePok"><%= pokemon.nome %></h2>
+					<p><%= pokemon.descricao %></p>
+					<p>Tipo: <%= pokemon.tipo %></p>
+					<p>Altura: <%= pokemon.altura %></p>
+					<p>Peso:<%= pokemon.peso %></p>
+					<p>Habilidade: <%= pokemon.habilidade %></p>
+					<p>Categoria: <%= pokemon.categoria %></p>
+				</div>
+			</section>
+		</main>
+		<%- include('./partials/footer.ejs') %>
+	</body>
 </html>

@@ -20,6 +20,18 @@ header h1{
     font-size: 3rem;
     text-align: center;
 }
+header nav{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+header nav a{
+    text-decoration: none;
+    text-align: center;
+    color: yellow;
+}
+header nav a:hover{
+    color: white;
+}
 main{
     margin: 0, 10rem, 0, 10rem;
 }
@@ -48,8 +60,15 @@ section#cards div.card h2{
 }
 section#cards div.card:hover{
     transform: scale(1.1);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
 
+}
+section#cards div a{
+    text-decoration: none;
+    color: green;
+}
+section#cards div a:hover{
+    color:red;
 }
 section#cadastro{
     display: flex;
@@ -74,7 +93,7 @@ section#cadastro form input{
 }
 section#cadastro form label{
     margin: 1rem;
-    color:rgb(158, 157, 157)
+    color:rgb(57, 245, 57)
 
 }
 section#cadastro form{
@@ -115,4 +134,34 @@ footer p a{
 }
 footer p a:hover{
     color:yellow
+}
+section#cadastro h2{
+    font-family:'Beau Rivage', cursive ;
+    font-size: 3rem;
+}
+section#cardao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+section#cardao div.cardin{
+    width: 20rem;
+    border-radius: 4rem;
+    background: hsl(60, 94%, 70%);
+    padding: 4rem;
+    margin: auto;
+    box-shadow: 5rem 5rem 10rem rgb(0 0 0 / 34%);
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+section#cardao div.cardin img{
+    width: 100%;
+}
+section#cardao div.cardin h2{
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+body.fundo{
+    background-color: rgb(94, 245, 94);
 }
