@@ -8,4 +8,4 @@
 
 ### Projeto inspirado na Pokedex
 
-### Link para o Heroku: 
+### Link para o Render: https://pokedex-blue-juy.onrender.com
